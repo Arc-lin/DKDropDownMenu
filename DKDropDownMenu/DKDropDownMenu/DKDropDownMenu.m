@@ -52,6 +52,10 @@
     return menu;
 }
 
+
+/**
+ *  设置选项按钮
+ */
 - (UIButton *)createDKButtonWithTitle:(NSString *)title
 {
     UIButton *dk_button  = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -64,6 +68,9 @@
     return dk_button;
 }
 
+/**
+ *  选项按钮的点击
+ */
 - (void)btnClick:(UIButton *)button
 {
     _selectButton.backgroundColor = [UIColor lightGrayColor];
