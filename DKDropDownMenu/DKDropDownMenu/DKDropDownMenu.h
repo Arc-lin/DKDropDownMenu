@@ -50,7 +50,7 @@
 /**
  * 初始化方法
  */
-- (instancetype)initDKDropDownMenuWithOptions:(NSArray<NSString *> *)options parentView:(UIView *)parentView buttonHeight:(CGFloat)buttonHeight topMargin:(CGFloat)topMargin numberOfShowOptions:(CGFloat)numberOfShowOptions;
+- (instancetype)initDKDropDownMenuWithOptions:(nonnull NSArray<NSString *> *)options parentView:(nonnull UIView *)parentView buttonHeight:(CGFloat)buttonHeight topMargin:(CGFloat)topMargin numberOfShowOptions:(CGFloat)numberOfShowOptions;
 
 /**
  *  显示菜单

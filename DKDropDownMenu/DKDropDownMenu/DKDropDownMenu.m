@@ -21,14 +21,12 @@
 @implementation DKDropDownMenu
 
 
-- (instancetype)initDKDropDownMenuWithOptions:(NSArray<NSString *> *)options parentView:(UIView *)parentView buttonHeight:(CGFloat)buttonHeight topMargin:(CGFloat)topMargin numberOfShowOptions:(CGFloat)numberOfShowOptions
+- (instancetype)initDKDropDownMenuWithOptions:(nonnull NSArray<NSString *> *)options parentView:( nonnull UIView *)parentView buttonHeight:(CGFloat)buttonHeight topMargin:(CGFloat)topMargin numberOfShowOptions:(CGFloat)numberOfShowOptions
 {
-    // 成员变量赋值
-    self.parentView = parentView;
-    self.buttonHeight = buttonHeight;
-    self.topMarginToSuperView = topMargin;
-    self.numOfShowOptions = numberOfShowOptions;
-    self.options = options;
+    // 设置默认值
+    buttonHeight = (buttonHeight == 0 ? 40 : buttonHeight);
+    topMargin = (topMargin == 0 ? 0 : topMargin);
+    numberOfShowOptions = (numberOfShowOptions == 0 ? options.count : numberOfShowOptions);
     
     // 设置菜单
     DKDropDownMenu *menu = [[DKDropDownMenu alloc] init];
@@ -88,7 +86,7 @@
 
 - (void)showMenuWithAnimted:(BOOL)animate
 {
-    if (animte) {
+    if (animate) {
         self.alpha = 0;
         [UIView animateWithDuration:0.25 animations:^{
             self.hidden = NO;
@@ -102,7 +100,7 @@
 
 - (void)hideMenuWithAnimate:(BOOL)animate
 {
-    if (animte) {
+    if (animate) {
         self.alpha = 1;
         [UIView animateWithDuration:0.25 animations:^{
             self.alpha = 0;
