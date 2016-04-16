@@ -32,12 +32,12 @@
     [self setupTestButton];
     
     DKDropDownMenu *menu = [[DKDropDownMenu alloc] initDKDropDownMenuWithOptions:@[@"测试按钮1",@"测试按钮2",@"测试按钮3",@"测试按钮4",@"测试按钮5",@"测试按钮6",@"测试按钮7"] parentView:self.button buttonHeight:40 topMargin:5 numberOfShowOptions:3.5];
-//    menu.buttonHeight = 40;
-//    menu.numOfShowOptions = 3;
-//    menu.topMarginToSuperView = 5;
-    menu.hidden = YES;
+
+   
     menu.optionDelegate = self;
+    
     _menu = menu;
+    
     [self.view addSubview:menu];
 }
 
@@ -65,15 +65,15 @@
 - (void)buttonDidClick
 {
     if (_menu.hidden) {
-        _menu.hidden = NO;
+        [_menu showMenuWithAnimted:YES];
     }else{
-        _menu.hidden = YES;
+        [_menu hideMenuWithAnimate:YES];
     }
 }
 
 - (void)optionDidClick:(UIButton *)button
 {
-    _menu.hidden = YES;
+    [_menu hideMenuWithAnimate:YES];
     [self.button setTitle:button.titleLabel.text forState:UIControlStateNormal];
     NSLog(@"%@",button.titleLabel.text);
 }

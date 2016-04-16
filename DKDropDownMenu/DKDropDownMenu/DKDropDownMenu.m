@@ -40,6 +40,9 @@
     CGFloat h = numberOfShowOptions * buttonHeight;
     menu.frame = CGRectMake(x, y, w, h);
     
+    menu.bounces = NO;
+    menu.hidden = YES;
+    
     // 添加按钮
     int i = 0;
     for (NSString *option in options) {
@@ -81,6 +84,35 @@
     if([_optionDelegate respondsToSelector:@selector(optionDidClick:)]){
         [_optionDelegate optionDidClick:button];
     }
+}
+
+- (void)showMenuWithAnimted:(BOOL)animate
+{
+    if (animte) {
+        self.alpha = 0;
+        [UIView animateWithDuration:0.25 animations:^{
+            self.hidden = NO;
+            self.alpha = 1;
+        }];
+    }else{
+        self.hidden = NO;
+    }
+   
+}
+
+- (void)hideMenuWithAnimate:(BOOL)animate
+{
+    if (animte) {
+        self.alpha = 1;
+        [UIView animateWithDuration:0.25 animations:^{
+            self.alpha = 0;
+        } completion:^(BOOL finished) {
+            self.hidden = YES;
+        }];
+    }else{
+        self.hidden = YES;
+    }
+    
 }
 
 @end
