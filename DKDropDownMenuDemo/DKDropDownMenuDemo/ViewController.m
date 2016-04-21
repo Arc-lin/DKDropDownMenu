@@ -17,6 +17,8 @@
 
 @property (nonatomic,strong) NSArray *buttonTitles;
 
+@property (nonatomic,weak) UILabel *label;
+
 
 @end
 
@@ -31,7 +33,9 @@
     
     // navigationBar 的 titleView上的button测试
     [self setupNavigationTitleView];
-
+    
+    // 测试label
+    [self setupLabel];
 }
 
 /**
@@ -44,6 +48,14 @@
     [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
     _titleButton = titleButton;
     self.navigationItem.titleView = titleButton;
+}
+
+- (void)setupLabel
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 300)];
+    label.numberOfLines = 0;
+    self.label = label;
+    [self.view addSubview:label];
 }
 
 // 以后只要显示在最前面的控件，一般都加在主窗口
@@ -74,16 +86,20 @@
     [self.titleButton setTitle:btn.titleLabel.text forState:UIControlStateNormal];
     [self.titleButton sizeToFit];
     
-    NSLog(@"%@",btn.titleLabel.text);
+//    NSLog(@"%@",btn.titleLabel.text);
 }
 
-- (void)cellDidClick:(UITableViewCell *)cell
+- (void)cellDidClick:(UITableViewCell *)cell options:(NSArray *)options
 {
     //隐藏pop菜单
     [self.titleButton setTitle:cell.textLabel.text forState:UIControlStateNormal];
     [self.titleButton sizeToFit];
-    
-    NSLog(@"%@",cell.textLabel.text);
+    NSMutableString *str = [NSMutableString string];
+    for (UITableViewCell *cell in options) {
+        [str appendString:cell.textLabel.text];
+    }
+    self.label.text = str;
+//    NSLog(@"%@",cell.textLabel.text);
 }
 
 @end

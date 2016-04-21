@@ -11,7 +11,7 @@
 @protocol ALTableViewCellDelegate <NSObject>
 
 @optional
-- (void)tableViewCellDidClick:(UITableViewCell *)cell;
+- (void)tableViewCellDidClick:(UITableViewCell *)cell options:(NSArray *)options;
 
 @end
 

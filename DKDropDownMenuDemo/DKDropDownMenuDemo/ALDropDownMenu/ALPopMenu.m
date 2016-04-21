@@ -125,10 +125,10 @@
     }
 }
 
-- (void)tableViewCellDidClick:(UITableViewCell *)cell
+- (void)tableViewCellDidClick:(UITableViewCell *)cell options:(NSArray *)options
 {
-    if ([_popMenuDelegate respondsToSelector:@selector(cellDidClick:)]) {
-        [_popMenuDelegate cellDidClick:cell];
+    if ([_popMenuDelegate respondsToSelector:@selector(cellDidClick:options:)]) {
+        [_popMenuDelegate cellDidClick:cell options:options];
     }
 }
 

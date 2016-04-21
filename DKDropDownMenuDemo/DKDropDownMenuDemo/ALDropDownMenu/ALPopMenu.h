@@ -25,7 +25,7 @@ typedef enum : NSUInteger {
 /**
  *  当Type为TableView的时候
  */
-- (void)cellDidClick:(UITableViewCell *)cell;
+- (void)cellDidClick:(UITableViewCell *)cell options:(NSArray *)options;
 
 @end
 
