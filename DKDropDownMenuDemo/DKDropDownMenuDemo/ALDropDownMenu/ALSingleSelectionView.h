@@ -1,5 +1,5 @@
 //
-//  ALScrollButtonsView.h
+//  ALSingleSelectionView.h
 //  ALDropDownMenu
 //
 //  Created by Arclin on 16/4/20.
@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ALOptionDelegate <NSObject>
+@protocol ALSingleOptionDelegate <NSObject>
 
-- (void)optionDidClicked:(UIButton *)button;
+@optional
+- (void)single_optionDidClicked:(UIButton *)button;
 
 @end
 
 
-@interface ALScrollButtonsView : UIScrollView
+@interface ALSingleSelectionView : UIScrollView
 
 /**
  * 按钮标题数组
@@ -30,7 +31,7 @@
 /**
  * 代理
  */
-@property (nonatomic,assign) id<ALOptionDelegate> optionDelegate;
+@property (nonatomic,assign) id<ALSingleOptionDelegate> optionDelegate;
 
 
 @end

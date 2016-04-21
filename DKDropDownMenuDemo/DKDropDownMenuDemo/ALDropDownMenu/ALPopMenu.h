@@ -9,23 +9,28 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
-    ALMenuTypeScroller, // 滚动视图下拉菜单
-    ALMenuTypeTable,    // 列表视图下拉菜单
+    ALMenuTypeSingleSelection, // 单选 —— 滚动视图下拉菜单
+    ALMenuTypeMultiSelections,    // 多选 —— 列表视图下拉菜单
     ALMenuTypeImage     // 图片下拉菜单（这样子就不叫菜单了吧）
 } ALMenuType;
 
 @protocol ALPopMenuDelegate <NSObject>
 
 @optional
+/**
+ *  当Type为单选 ALMenuTypeSingleSelection 的时候要用到的代理方法
+ *
+ *  @param btn 当前选择的选项
+ */
+- (void)singleOptionDidClick:(UIButton *)btn;
 
 /**
- *  当Type为Scroller的时候
+ *  当Type为多选 ALMenuTypeMultiSelections 的时候要用到的代理方法
+ *
+ *  @param currentOption 当前选择的选项
+ *  @param options       所有选中的选项
  */
-- (void)optionBtnDidClick:(UIButton *)btn;
-/**
- *  当Type为TableView的时候
- */
-- (void)cellDidClick:(UITableViewCell *)cell options:(NSArray *)options;
+- (void)multiOptionsDidClick:(UITableViewCell *)currentOption allOptions:(NSArray *)options;
 
 @end
 

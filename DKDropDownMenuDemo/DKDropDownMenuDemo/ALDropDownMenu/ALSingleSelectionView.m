@@ -1,14 +1,14 @@
 //
-//  ALScrollButtonsView.m
+//  ALSingleSelectionView.m
 //  ALDropDownMenu
 //
 //  Created by Arclin on 16/4/20.
 //  Copyright © 2016年 dankal. All rights reserved.
 //
 
-#import "ALScrollButtonsView.h"
+#import "ALSingleSelectionView.h"
 
-@interface ALScrollButtonsView()
+@interface ALSingleSelectionView()
 
 /**
  * 按钮数组
@@ -18,7 +18,7 @@
 @end
 
 
-@implementation ALScrollButtonsView
+@implementation ALSingleSelectionView
 
 - (void)setButtons:(NSArray<UIButton *> *)buttons
 {
@@ -37,8 +37,8 @@
 
 - (void)btnClick:(UIButton *)button
 {
-    if ([_optionDelegate respondsToSelector:@selector(optionDidClicked:)]) {
-        [_optionDelegate optionDidClicked:button];
+    if ([_optionDelegate respondsToSelector:@selector(single_optionDidClicked:)]) {
+        [_optionDelegate single_optionDidClicked:button];
     }
 }
 

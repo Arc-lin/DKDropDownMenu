@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		358C45D01CC7D91A00899E7D /* ALCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CB1CC7D91A00899E7D /* ALCover.m */; };
 		358C45D21CC7D91A00899E7D /* ALPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CF1CC7D91A00899E7D /* ALPopMenu.m */; };
-		358C45D41CC85C6900899E7D /* ALScrollButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CD1CC7D91A00899E7D /* ALScrollButtonsView.m */; };
-		358C45DA1CC85D0E00899E7D /* ALTableButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45D91CC85D0E00899E7D /* ALTableButtonsViewController.m */; };
+		358C45D41CC85C6900899E7D /* ALSingleSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CD1CC7D91A00899E7D /* ALSingleSelectionView.m */; };
+		358C45DA1CC85D0E00899E7D /* ALMultiSelectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45D91CC85D0E00899E7D /* ALMultiSelectionsViewController.m */; };
 		358C45DD1CC8836000899E7D /* ALImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45DC1CC8836000899E7D /* ALImageView.m */; };
 		35D6056E1CC7AB86009293D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6056D1CC7AB86009293D6 /* main.m */; };
 		35D605711CC7AB86009293D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D605701CC7AB86009293D6 /* AppDelegate.m */; };
@@ -23,12 +23,12 @@
 /* Begin PBXFileReference section */
 		358C45CA1CC7D91A00899E7D /* ALCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCover.h; sourceTree = "<group>"; };
 		358C45CB1CC7D91A00899E7D /* ALCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCover.m; sourceTree = "<group>"; };
-		358C45CC1CC7D91A00899E7D /* ALScrollButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALScrollButtonsView.h; sourceTree = "<group>"; };
-		358C45CD1CC7D91A00899E7D /* ALScrollButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALScrollButtonsView.m; sourceTree = "<group>"; };
+		358C45CC1CC7D91A00899E7D /* ALSingleSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSingleSelectionView.h; sourceTree = "<group>"; };
+		358C45CD1CC7D91A00899E7D /* ALSingleSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSingleSelectionView.m; sourceTree = "<group>"; };
 		358C45CE1CC7D91A00899E7D /* ALPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPopMenu.h; sourceTree = "<group>"; };
 		358C45CF1CC7D91A00899E7D /* ALPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPopMenu.m; sourceTree = "<group>"; };
-		358C45D81CC85D0E00899E7D /* ALTableButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTableButtonsViewController.h; sourceTree = "<group>"; };
-		358C45D91CC85D0E00899E7D /* ALTableButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTableButtonsViewController.m; sourceTree = "<group>"; };
+		358C45D81CC85D0E00899E7D /* ALMultiSelectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMultiSelectionsViewController.h; sourceTree = "<group>"; };
+		358C45D91CC85D0E00899E7D /* ALMultiSelectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMultiSelectionsViewController.m; sourceTree = "<group>"; };
 		358C45DB1CC8836000899E7D /* ALImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALImageView.h; sourceTree = "<group>"; };
 		358C45DC1CC8836000899E7D /* ALImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALImageView.m; sourceTree = "<group>"; };
 		35D605691CC7AB86009293D6 /* DKDropDownMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKDropDownMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,10 +61,10 @@
 				358C45CB1CC7D91A00899E7D /* ALCover.m */,
 				358C45CE1CC7D91A00899E7D /* ALPopMenu.h */,
 				358C45CF1CC7D91A00899E7D /* ALPopMenu.m */,
-				358C45CC1CC7D91A00899E7D /* ALScrollButtonsView.h */,
-				358C45CD1CC7D91A00899E7D /* ALScrollButtonsView.m */,
-				358C45D81CC85D0E00899E7D /* ALTableButtonsViewController.h */,
-				358C45D91CC85D0E00899E7D /* ALTableButtonsViewController.m */,
+				358C45CC1CC7D91A00899E7D /* ALSingleSelectionView.h */,
+				358C45CD1CC7D91A00899E7D /* ALSingleSelectionView.m */,
+				358C45D81CC85D0E00899E7D /* ALMultiSelectionsViewController.h */,
+				358C45D91CC85D0E00899E7D /* ALMultiSelectionsViewController.m */,
 				358C45DB1CC8836000899E7D /* ALImageView.h */,
 				358C45DC1CC8836000899E7D /* ALImageView.m */,
 			);
@@ -182,8 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				358C45DA1CC85D0E00899E7D /* ALTableButtonsViewController.m in Sources */,
-				358C45D41CC85C6900899E7D /* ALScrollButtonsView.m in Sources */,
+				358C45DA1CC85D0E00899E7D /* ALMultiSelectionsViewController.m in Sources */,
+				358C45D41CC85C6900899E7D /* ALSingleSelectionView.m in Sources */,
 				35D605741CC7AB86009293D6 /* ViewController.m in Sources */,
 				358C45DD1CC8836000899E7D /* ALImageView.m in Sources */,
 				358C45D21CC7D91A00899E7D /* ALPopMenu.m in Sources */,

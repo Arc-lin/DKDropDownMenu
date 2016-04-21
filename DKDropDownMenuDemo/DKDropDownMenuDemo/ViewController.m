@@ -28,7 +28,6 @@
 
     [super viewDidLoad];
 
-    self.title = @"测试";
     self.buttonTitles = @[@"按钮一",@"按钮二",@"按钮三",@"按钮四",@"按钮五",@"按钮六",@"按钮七"];
     
     // navigationBar 的 titleView上的button测试
@@ -44,7 +43,7 @@
 - (void)setupNavigationTitleView{
     UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [titleButton setTitle:@"测试" forState:UIControlStateNormal];
+    [titleButton setTitle:@"点我测试" forState:UIControlStateNormal];
     [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
     _titleButton = titleButton;
     self.navigationItem.titleView = titleButton;
@@ -71,7 +70,7 @@
     ALPopMenu *menu = [ALPopMenu showInRect:CGRectMake(popX, popY, popW, popH)];
     menu.buttonTitles = self.buttonTitles;
     menu.menuImage = [UIImage imageNamed:@"1"];
-    menu.menuType = ALMenuTypeTable;
+    menu.menuType = ALMenuTypeMultiSelections;
     menu.popMenuDelegate = self;
     self.menu = menu;
     
@@ -79,27 +78,25 @@
 
 #pragma mark - <ALPopMenuDelegate>
 
-- (void)optionBtnDidClick:(UIButton *)btn
+- (void)singleOptionDidClick:(UIButton *)btn
 {
     //隐藏pop菜单
     [ALPopMenu hide];
     [self.titleButton setTitle:btn.titleLabel.text forState:UIControlStateNormal];
     [self.titleButton sizeToFit];
     
-//    NSLog(@"%@",btn.titleLabel.text);
+    NSLog(@"%@",btn.titleLabel.text);
 }
 
-- (void)cellDidClick:(UITableViewCell *)cell options:(NSArray *)options
+- (void)multiOptionsDidClick:(UITableViewCell *)currentOption allOptions:(NSArray *)options
 {
-    //隐藏pop菜单
-    [self.titleButton setTitle:cell.textLabel.text forState:UIControlStateNormal];
+    [self.titleButton setTitle:currentOption.textLabel.text forState:UIControlStateNormal];
     [self.titleButton sizeToFit];
     NSMutableString *str = [NSMutableString string];
     for (UITableViewCell *cell in options) {
         [str appendString:cell.textLabel.text];
     }
     self.label.text = str;
-//    NSLog(@"%@",cell.textLabel.text);
 }
 
 @end

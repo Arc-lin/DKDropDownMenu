@@ -8,17 +8,17 @@
 
 #import "ALPopMenu.h"
 #import "ALCover.h"
-#import "ALScrollButtonsView.h"
-#import "ALTableButtonsViewController.h"
+#import "ALSingleSelectionView.h"
+#import "ALMultiSelectionsViewController.h"
 #import "ALImageView.h"
 
 #define ALKeyWindow [UIApplication sharedApplication].keyWindow
 
-@interface ALPopMenu()<ALOptionDelegate,ALTableViewCellDelegate>
+@interface ALPopMenu()<ALSingleOptionDelegate,ALMultiOptionsDelegate>
 
-@property (nonatomic,strong) ALScrollButtonsView *scrollButtonsView;
+@property (nonatomic,strong) ALSingleSelectionView *singleSelectionView;
 
-@property (nonatomic,strong) ALTableButtonsViewController *tableButtonsViewController;
+@property (nonatomic,strong) ALMultiSelectionsViewController *multiSelectionsViewController;
 
 @property (nonatomic,strong) ALImageView *menuImageView;
 
@@ -26,23 +26,23 @@
 
 @implementation ALPopMenu
 
-- (ALScrollButtonsView *)scrollButtonsView
+- (ALSingleSelectionView *)singleSelectionView
 {
-    if (!_scrollButtonsView) {
-        _scrollButtonsView = [[ALScrollButtonsView alloc] initWithFrame:self.bounds];
-        _scrollButtonsView.optionDelegate = self;
+    if (!_singleSelectionView) {
+        _singleSelectionView = [[ALSingleSelectionView alloc] initWithFrame:self.bounds];
+        _singleSelectionView.optionDelegate = self;
     }
-    return _scrollButtonsView;
+    return _singleSelectionView;
 }
 
-- (ALTableButtonsViewController *)tableButtonsViewController
+- (ALMultiSelectionsViewController *)multiSelectionsViewController
 {
-    if(!_tableButtonsViewController){
-        _tableButtonsViewController = [[ALTableButtonsViewController alloc] init];
-        _tableButtonsViewController.tableView.frame = self.bounds;
-        _tableButtonsViewController.cellDelegate = self;
+    if(!_multiSelectionsViewController){
+        _multiSelectionsViewController = [[ALMultiSelectionsViewController alloc] init];
+        _multiSelectionsViewController.tableView.frame = self.bounds;
+        _multiSelectionsViewController.optionsDelegate = self;
     }
-    return _tableButtonsViewController;
+    return _multiSelectionsViewController;
 }
 
 - (ALImageView *)menuImageView{
@@ -88,20 +88,20 @@
 - (void)setMenuType:(ALMenuType)menuType
 {
     switch (menuType) {
-        case ALMenuTypeScroller:
-            self.contentView = self.scrollButtonsView;
-            self.scrollButtonsView.buttonTitles = self.buttonTitles;
+        case ALMenuTypeSingleSelection:
+            self.contentView = self.singleSelectionView;
+            self.singleSelectionView.buttonTitles = self.buttonTitles;
             break;
-        case ALMenuTypeTable:
-            self.contentView = self.tableButtonsViewController.tableView;
-            self.tableButtonsViewController.buttonTitles = self.buttonTitles;
+        case ALMenuTypeMultiSelections:
+            self.contentView = self.multiSelectionsViewController.tableView;
+            self.multiSelectionsViewController.buttonTitles = self.buttonTitles;
             break;
         case ALMenuTypeImage:
             self.contentView = self.menuImageView;
             break;
         default:
-            self.contentView = self.scrollButtonsView;
-            self.scrollButtonsView.buttonTitles = self.buttonTitles;
+            self.contentView = self.singleSelectionView;
+            self.singleSelectionView.buttonTitles = self.buttonTitles;
             break;
     }
 }
@@ -118,17 +118,17 @@
 
 }
 
-- (void)optionDidClicked:(UIButton *)button
+- (void)single_optionDidClicked:(UIButton *)button
 {
-    if ([_popMenuDelegate respondsToSelector:@selector(optionBtnDidClick:)]) {
-        [_popMenuDelegate optionBtnDidClick:button];
+    if ([_popMenuDelegate respondsToSelector:@selector(singleOptionDidClick:)]) {
+        [_popMenuDelegate singleOptionDidClick:button];
     }
 }
 
-- (void)tableViewCellDidClick:(UITableViewCell *)cell options:(NSArray *)options
+- (void)multi_optionDidClick:(UITableViewCell *)cell currentAllSelected:(NSArray *)options
 {
-    if ([_popMenuDelegate respondsToSelector:@selector(cellDidClick:options:)]) {
-        [_popMenuDelegate cellDidClick:cell options:options];
+    if ([_popMenuDelegate respondsToSelector:@selector(multiOptionsDidClick:allOptions:)]) {
+        [_popMenuDelegate multiOptionsDidClick:cell allOptions:options];
     }
 }
 

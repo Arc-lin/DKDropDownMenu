@@ -1,14 +1,14 @@
 //
-//  ALTableButtonsViewController.m
+//  ALMultiSelectionsViewController.m
 //  DKDropDownMenuDemo
 //
 //  Created by Arclin on 16/4/21.
 //  Copyright © 2016年 dankal. All rights reserved.
 //
 
-#import "ALTableButtonsViewController.h"
+#import "ALMultiSelectionsViewController.h"
 
-@interface ALTableButtonsViewController ()
+@interface ALMultiSelectionsViewController ()
 
 /**
  * 多选-选项数组
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation ALTableButtonsViewController
+@implementation ALMultiSelectionsViewController
 
 /**
  *  懒加载
@@ -35,6 +35,7 @@
     
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.showsVerticalScrollIndicator = NO;
 }
 
 #pragma mark - Table view data source
@@ -81,8 +82,8 @@
 
 - (void)cellDidClick:(UITableViewCell *)cell
 {
-    if ([_cellDelegate respondsToSelector:@selector(tableViewCellDidClick:options:)]) {
-        [_cellDelegate tableViewCellDidClick:cell options:self.optionArr];
+    if ([_optionsDelegate respondsToSelector:@selector(multi_optionDidClick:currentAllSelected:)]) {
+        [_optionsDelegate multi_optionDidClick:cell currentAllSelected:self.optionArr];
     }
 }
 
