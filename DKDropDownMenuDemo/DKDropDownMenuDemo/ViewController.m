@@ -70,7 +70,7 @@
     ALPopMenu *menu = [ALPopMenu showInRect:CGRectMake(popX, popY, popW, popH)];
     menu.buttonTitles = self.buttonTitles;
     menu.menuImage = [UIImage imageNamed:@"1"];
-    menu.menuType = ALMenuTypeMultiSelections;
+    menu.menuType = ALMenuTypeImage;
     menu.popMenuDelegate = self;
     self.menu = menu;
     
