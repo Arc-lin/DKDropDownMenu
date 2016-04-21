@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		358C45D01CC7D91A00899E7D /* ALCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CB1CC7D91A00899E7D /* ALCover.m */; };
+		358C45D21CC7D91A00899E7D /* ALPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CF1CC7D91A00899E7D /* ALPopMenu.m */; };
+		358C45D41CC85C6900899E7D /* ALScrollButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45CD1CC7D91A00899E7D /* ALScrollButtonsView.m */; };
+		358C45DA1CC85D0E00899E7D /* ALTableButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45D91CC85D0E00899E7D /* ALTableButtonsViewController.m */; };
+		358C45DD1CC8836000899E7D /* ALImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C45DC1CC8836000899E7D /* ALImageView.m */; };
+		35D6056E1CC7AB86009293D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D6056D1CC7AB86009293D6 /* main.m */; };
+		35D605711CC7AB86009293D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D605701CC7AB86009293D6 /* AppDelegate.m */; };
+		35D605741CC7AB86009293D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D605731CC7AB86009293D6 /* ViewController.m */; };
+		35D605771CC7AB86009293D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D605751CC7AB86009293D6 /* Main.storyboard */; };
+		35D605791CC7AB86009293D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D605781CC7AB86009293D6 /* Assets.xcassets */; };
+		35D6057C1CC7AB86009293D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D6057A1CC7AB86009293D6 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		358C45CA1CC7D91A00899E7D /* ALCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCover.h; sourceTree = "<group>"; };
+		358C45CB1CC7D91A00899E7D /* ALCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCover.m; sourceTree = "<group>"; };
+		358C45CC1CC7D91A00899E7D /* ALScrollButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALScrollButtonsView.h; sourceTree = "<group>"; };
+		358C45CD1CC7D91A00899E7D /* ALScrollButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALScrollButtonsView.m; sourceTree = "<group>"; };
+		358C45CE1CC7D91A00899E7D /* ALPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPopMenu.h; sourceTree = "<group>"; };
+		358C45CF1CC7D91A00899E7D /* ALPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPopMenu.m; sourceTree = "<group>"; };
+		358C45D81CC85D0E00899E7D /* ALTableButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTableButtonsViewController.h; sourceTree = "<group>"; };
+		358C45D91CC85D0E00899E7D /* ALTableButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTableButtonsViewController.m; sourceTree = "<group>"; };
+		358C45DB1CC8836000899E7D /* ALImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALImageView.h; sourceTree = "<group>"; };
+		358C45DC1CC8836000899E7D /* ALImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALImageView.m; sourceTree = "<group>"; };
+		35D605691CC7AB86009293D6 /* DKDropDownMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKDropDownMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D6056D1CC7AB86009293D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35D6056F1CC7AB86009293D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35D605701CC7AB86009293D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35D605721CC7AB86009293D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35D605731CC7AB86009293D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35D605761CC7AB86009293D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35D605781CC7AB86009293D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35D6057B1CC7AB86009293D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35D6057D1CC7AB86009293D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35D605661CC7AB86009293D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		358C45C91CC7D91A00899E7D /* ALDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				358C45CA1CC7D91A00899E7D /* ALCover.h */,
+				358C45CB1CC7D91A00899E7D /* ALCover.m */,
+				358C45CE1CC7D91A00899E7D /* ALPopMenu.h */,
+				358C45CF1CC7D91A00899E7D /* ALPopMenu.m */,
+				358C45CC1CC7D91A00899E7D /* ALScrollButtonsView.h */,
+				358C45CD1CC7D91A00899E7D /* ALScrollButtonsView.m */,
+				358C45D81CC85D0E00899E7D /* ALTableButtonsViewController.h */,
+				358C45D91CC85D0E00899E7D /* ALTableButtonsViewController.m */,
+				358C45DB1CC8836000899E7D /* ALImageView.h */,
+				358C45DC1CC8836000899E7D /* ALImageView.m */,
+			);
+			path = ALDropDownMenu;
+			sourceTree = "<group>";
+		};
+		35D605601CC7AB86009293D6 = {
+			isa = PBXGroup;
+			children = (
+				35D6056B1CC7AB86009293D6 /* DKDropDownMenuDemo */,
+				35D6056A1CC7AB86009293D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35D6056A1CC7AB86009293D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35D605691CC7AB86009293D6 /* DKDropDownMenuDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D6056B1CC7AB86009293D6 /* DKDropDownMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35D6056F1CC7AB86009293D6 /* AppDelegate.h */,
+				35D605701CC7AB86009293D6 /* AppDelegate.m */,
+				358C45C91CC7D91A00899E7D /* ALDropDownMenu */,
+				35D605721CC7AB86009293D6 /* ViewController.h */,
+				35D605731CC7AB86009293D6 /* ViewController.m */,
+				35D605751CC7AB86009293D6 /* Main.storyboard */,
+				35D605781CC7AB86009293D6 /* Assets.xcassets */,
+				35D6057A1CC7AB86009293D6 /* LaunchScreen.storyboard */,
+				35D6057D1CC7AB86009293D6 /* Info.plist */,
+				35D6056C1CC7AB86009293D6 /* Supporting Files */,
+			);
+			path = DKDropDownMenuDemo;
+			sourceTree = "<group>";
+		};
+		35D6056C1CC7AB86009293D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35D6056D1CC7AB86009293D6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35D605681CC7AB86009293D6 /* DKDropDownMenuDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35D605801CC7AB86009293D6 /* Build configuration list for PBXNativeTarget "DKDropDownMenuDemo" */;
+			buildPhases = (
+				35D605651CC7AB86009293D6 /* Sources */,
+				35D605661CC7AB86009293D6 /* Frameworks */,
+				35D605671CC7AB86009293D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DKDropDownMenuDemo;
+			productName = DKDropDownMenuDemo;
+			productReference = 35D605691CC7AB86009293D6 /* DKDropDownMenuDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35D605611CC7AB86009293D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = dankal;
+				TargetAttributes = {
+					35D605681CC7AB86009293D6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 35D605641CC7AB86009293D6 /* Build configuration list for PBXProject "DKDropDownMenuDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35D605601CC7AB86009293D6;
+			productRefGroup = 35D6056A1CC7AB86009293D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35D605681CC7AB86009293D6 /* DKDropDownMenuDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35D605671CC7AB86009293D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D6057C1CC7AB86009293D6 /* LaunchScreen.storyboard in Resources */,
+				35D605791CC7AB86009293D6 /* Assets.xcassets in Resources */,
+				35D605771CC7AB86009293D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35D605651CC7AB86009293D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358C45DA1CC85D0E00899E7D /* ALTableButtonsViewController.m in Sources */,
+				358C45D41CC85C6900899E7D /* ALScrollButtonsView.m in Sources */,
+				35D605741CC7AB86009293D6 /* ViewController.m in Sources */,
+				358C45DD1CC8836000899E7D /* ALImageView.m in Sources */,
+				358C45D21CC7D91A00899E7D /* ALPopMenu.m in Sources */,
+				35D605711CC7AB86009293D6 /* AppDelegate.m in Sources */,
+				358C45D01CC7D91A00899E7D /* ALCover.m in Sources */,
+				35D6056E1CC7AB86009293D6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35D605751CC7AB86009293D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35D605761CC7AB86009293D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35D6057A1CC7AB86009293D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35D6057B1CC7AB86009293D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35D6057E1CC7AB86009293D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35D6057F1CC7AB86009293D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35D605811CC7AB86009293D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DKDropDownMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.dankal.DKDropDownMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35D605821CC7AB86009293D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DKDropDownMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.dankal.DKDropDownMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35D605641CC7AB86009293D6 /* Build configuration list for PBXProject "DKDropDownMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D6057E1CC7AB86009293D6 /* Debug */,
+				35D6057F1CC7AB86009293D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35D605801CC7AB86009293D6 /* Build configuration list for PBXNativeTarget "DKDropDownMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D605811CC7AB86009293D6 /* Debug */,
+				35D605821CC7AB86009293D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35D605611CC7AB86009293D6 /* Project object */;
+}
